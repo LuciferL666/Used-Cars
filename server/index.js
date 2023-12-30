@@ -7,6 +7,12 @@ const app = express();
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+
+  next();
+})
+
 app.get("/", (req, res) => {
   res.send("RESTful service");
 });
