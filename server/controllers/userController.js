@@ -1,7 +1,9 @@
 const router = require("express").Router();
 
 router.post('/register', () => {
-    const {} = req.body;
+    const {username, email, password} = req.body;
+
+    res.end()
 });
 
 module.exports = router;
