@@ -14,6 +14,7 @@ router.post("/register", async (req, res) => {
     });
   } catch (err) {
     //2ЧАСА И 2 МИН ОСТАВАТ
+    
   }
 });
 
