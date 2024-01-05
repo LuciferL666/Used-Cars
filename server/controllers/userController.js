@@ -8,12 +8,14 @@ router.post("/register", async (req, res) => {
     const user = await userManager.register(req.body);
 
     res.json({
-      email: "",
-      authToken: "",
-      userId: "",
+      accessToken: "",
+      email: user.email,
+      _id: user._id,
     });
   } catch (err) {
-    //2ЧАСА И 2 МИН ОСТАВАТ
+    res.status(400).json({
+      message: 'Some error'
+    })
     
   }
 });
