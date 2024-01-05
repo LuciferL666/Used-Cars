@@ -22,10 +22,19 @@ router.post("/register", async (req, res) => {
 
 router.post('/login', async (req, res) => {
 
+  try {
+    const result = await userManager.login(req.body);
   
-  const result = await userManager.login(req.body);
+    res.json(result)
 
-  res.json(result)
+  } catch(err) {
+    res.status(400).json({
+      message: err.message
+    });
+  }
 });
 
 module.exports = router;
+
+
+//1:47min ostava
