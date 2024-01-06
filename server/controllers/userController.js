@@ -39,4 +39,4 @@ router.get('/logout', (req, res) => {
 module.exports = router;
 
 
-//1:47min ostava
+//1:30min ostava
