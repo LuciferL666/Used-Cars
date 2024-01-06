@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 
 
 const routes = require("./routes");
+const {auth} = require('./middlewares/authMiddleware')
 
 
 const app = express();
@@ -13,6 +14,7 @@ mongoose.connect('mongodb://localhost:27017/cars')
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(auth);
 
 //CORS
 app.use((req, res, next) => {
