@@ -5,14 +5,12 @@ const userManager = require("../managers/userManager");
 router.post("/register", async (req, res) => {
   try {
     console.log(req.body);
-    const user = await userManager.register(req.body);
+    const result = await userManager.register(req.body);
 
-    res.json({
-      accessToken: "",
-      email: user.email,
-      _id: user._id,
-    });
+    res.json(result);
   } catch (err) {
+    console.log(err);
+    
     res.status(400).json({
       message: 'Some error'
     })
