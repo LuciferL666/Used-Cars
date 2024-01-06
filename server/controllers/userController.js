@@ -10,7 +10,7 @@ router.post("/register", async (req, res) => {
     res.json(result);
   } catch (err) {
     console.log(err);
-    
+
     res.status(400).json({
       message: 'Some error'
     })
@@ -30,6 +30,10 @@ router.post('/login', async (req, res) => {
       message: err.message
     });
   }
+});
+
+router.get('/logout', (req, res) => {
+    
 });
 
 module.exports = router;
