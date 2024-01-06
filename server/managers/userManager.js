@@ -4,7 +4,13 @@ const SECRET = 'c1b0f55c-8254-4a0b-8789-d780b25a060e';
 
 const User = require('../models/User');
 
-exports.register = (userData) => User.create(userData);
+exports.register = async (userData) => {
+   const user = await User.create(userData);
+
+    const result = getAuthResult(user);
+
+    return result;
+}
 
 exports.login = async ({email, password}) => {
     const user = await User.findOne({ email });
@@ -19,6 +25,12 @@ exports.login = async ({email, password}) => {
         throw new Error('Invalid username or password');
     }
 
+    const result = getAuthResult(user);
+
+    return result;
+};
+
+function getAuthResult(user) {
     const payload = {
         _id: user._id,
         email: user.email,
@@ -33,4 +45,4 @@ exports.login = async ({email, password}) => {
     };
 
     return result;
-};
+}
