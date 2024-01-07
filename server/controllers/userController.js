@@ -12,31 +12,27 @@ router.post("/register", async (req, res) => {
     console.log(err);
 
     res.status(400).json({
-      message: 'Some error'
-    })
-    
-  }
-});
-
-router.post('/login', async (req, res) => {
-
-  try {
-    const result = await userManager.login(req.body);
-  
-    res.json(result)
-
-  } catch(err) {
-    res.status(400).json({
-      message: err.message
+      message: "Some error",
     });
   }
 });
 
-router.get('/logout', (req, res) => {
-    res.end();
+router.post("/login", async (req, res) => {
+  try {
+    const result = await userManager.login(req.body);
+
+    res.json(result);
+  } catch (err) {
+    res.status(400).json({
+      message: err.message,
+    });
+  }
+});
+
+router.get("/logout", (req, res) => {
+  res.end();
 });
 
 module.exports = router;
-
 
 //1:30min ostava
