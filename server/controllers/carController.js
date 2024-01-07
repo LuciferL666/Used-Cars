@@ -1,6 +1,10 @@
 const router = require("express").Router();
 
-router.post('/', (req, res) => {
+const carManager = require('../managers/carManager');
+
+router.post('/', async (req, res) => {
+    const car = await carManager.create(req.body);
+
     
 })
 
