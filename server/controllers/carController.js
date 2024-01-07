@@ -11,8 +11,8 @@ router.post('/', async (req, res) => {
             message: err.message //or 'Cannot create Car'
         });
     }
+});
 
-
-})
+//1:25 min ostavat
 
 module.exports = router;
