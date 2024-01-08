@@ -11,7 +11,7 @@ exports.auth = (req, res, next) => {
         try{
             const decodedToken = jwt.verify(token, SECRET);
 
-            res.user = decodedToken;
+            req.user = decodedToken;
 
             next();
         } catch(err) {
