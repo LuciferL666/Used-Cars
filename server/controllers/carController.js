@@ -10,7 +10,11 @@ router.get ('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try {
-        await carManager.create(req.body);
+        await carManager.create({
+            ...req.body,
+            _ownerId: req.user._id,
+        });
+
         res.status(204).end();
     } catch(err) {
         res.status(400).json({
@@ -18,6 +22,7 @@ router.post('/', async (req, res) => {
         });
     }
 });
+
 
 //1:25 min ostavat
 
