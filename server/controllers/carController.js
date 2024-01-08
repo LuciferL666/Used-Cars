@@ -28,6 +28,13 @@ router.get('/:carId', async (req, res) => {
 
     res.json(car);
 })
-//1:25 min ostavat
+
+router.put('/:carId', async (req, res) => {
+    await carManager.update(req.params.carId, req.body);
+
+    res.status(204).end()
+})
+
+
 
 module.exports = router;
