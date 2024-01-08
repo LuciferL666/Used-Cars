@@ -23,7 +23,11 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.get('/:carId', async (req, res) => {
+    const car = await carManager.getOne(req.params.carId);
 
+    res.json(car);
+})
 //1:25 min ostavat
 
 module.exports = router;
