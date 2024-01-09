@@ -1,16 +1,15 @@
 const express = require("express");
-const mongoose = require('mongoose')
-
+const mongoose = require("mongoose");
 
 const routes = require("./routes");
-const {auth} = require('./middlewares/authMiddleware')
-
+const { auth } = require("./middlewares/authMiddleware");
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/cars')
-      .then(() => console.log('DB Connected'))
-      .catch(err => console.log(err)) 
+mongoose
+  .connect("mongodb://localhost:27017/cars")
+  .then(() => console.log("DB Connected"))
+  .catch((err) => console.log(err));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -32,7 +31,5 @@ app.get("/", (req, res) => {
 });
 
 app.use(routes);
-
-
 
 app.listen(3030, () => console.log("Server is listening on port 3030..."));
