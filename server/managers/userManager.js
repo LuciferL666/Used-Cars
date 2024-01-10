@@ -44,5 +44,6 @@ function getAuthResult(user) {
     _id: user._id,
   };
 
+  
   return result;
 }
