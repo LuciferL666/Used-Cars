@@ -34,8 +34,6 @@ router.put("/:carId", async (req, res) => {
 
   res.status(204).end();
 });
-
-
 //1:01ostava
 
 module.exports = router;
