@@ -1,7 +1,16 @@
 const Car = require("../models/Car");
 
-exports.getAll = (query) => {
-    Car.find();
+exports.getAll = async (query) => {
+    const where = query.where;
+
+    if(where) {
+        const [fieldName, ownerId] = where.split('=');
+        ownerId = ownerId.replaceAll('"', '')
+    }
+
+    const result = await Car.find();
+
+    return result;
 }
 
 exports.getOne = (carId) => Car.findById(carId);
