@@ -1,9 +1,9 @@
 const Car = require("../models/Car");
 
-exports.getAll = async (querystring) => {
+exports.getAll = async (qs) => {
 
-    if(querystring.where) {
-        const [fieldName, ownerId] = querystring.where.split('=');
+    if(qs.where) {
+        let [fieldName, ownerId] = qs.where.split('=');
         ownerId = ownerId.replaceAll('"', '')
     }
 
