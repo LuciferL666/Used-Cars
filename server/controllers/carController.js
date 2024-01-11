@@ -3,7 +3,9 @@ const router = require("express").Router();
 const carManager = require("../managers/carManager");
 
 router.get("/", async (req, res) => {
-  const cars = await carManager.getAll();
+  console.log(req.query);
+
+  const cars = await carManager.getAll(req.query);
 
   res.json(cars);
 });
