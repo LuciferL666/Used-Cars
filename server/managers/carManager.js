@@ -1,6 +1,8 @@
 const Car = require("../models/Car");
 
-exports.getAll = () => Car.find();
+exports.getAll = (query) => {
+    Car.find();
+}
 
 exports.getOne = (carId) => Car.findById(carId);
 
