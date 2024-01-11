@@ -34,6 +34,12 @@ router.put("/:carId", async (req, res) => {
 
   res.status(204).end();
 });
-//1:01ostava
+
+router.delete("/:carId", async (req, res) => {
+  await carManager.delete(req.params.carId);
+
+  res.status(204).end();
+});
+
 
 module.exports = router;
