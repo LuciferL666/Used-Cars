@@ -33,30 +33,65 @@
     <div class="login">
       <h1>Login</h1>
       <form action="">
-        <input type="email" class="email-login" name="Email" placeholder="Your Email">
-        <input type="password" class="password" name="Password" placeholder="Your Password">
+        <input
+          type="email"
+          class="email-login"
+          name="Email"
+          placeholder="Your Email"
+        />
+        <input
+          type="password"
+          class="password"
+          name="Password"
+          placeholder="Your Password"
+        />
         <button class="submit-button" type="submit">Submit</button>
-        <button class="goToRegistration" type="button">Don't have an account? Click here</button>
+        <button class="goToRegistration" type="button">
+          Don't have an account? Click here
+        </button>
       </form>
     </div>
     <!-- Register -->
     <div class="register">
       <h1>Register</h1>
       <form action="">
-        <input type="username" class="username-register" name="Username" placeholder="Your Username">
-        <input type="email" class="email-register" name="Email" placeholder="Your Email">
-        <input type="password" class="password" name="Password" placeholder="Your Password">
-        <input type="password" class="repeatPassword" name="repeatPassword" placeholder="Repeat Password">
+        <input
+          type="username"
+          class="username-register"
+          name="Username"
+          placeholder="Your Username"
+        />
+        <input
+          type="email"
+          class="email-register"
+          name="Email"
+          placeholder="Your Email"
+        />
+        <input
+          type="password"
+          class="password"
+          name="Password"
+          placeholder="Your Password"
+        />
+        <input
+          type="password"
+          class="repeatPassword"
+          name="repeatPassword"
+          placeholder="Repeat Password"
+        />
         <button class="submit-button" type="submit">Submit</button>
-        <button class="goToLogin" type="button">You have an account? Click here</button>
-
-
+        <button class="goToLogin" type="button">
+          You have an account? Click here
+        </button>
       </form>
     </div>
-    <!-- Catalog --> 
+    <!-- Catalog -->
     <div class="catalog">
       <div class="allCars-info">
-        <img src="https://www.playlek.se/images/zoom/chevroletimpalasportsedan1967blackgreenlight2.jpg" alt="">
+        <img
+          src="https://www.playlek.se/images/zoom/chevroletimpalasportsedan1967blackgreenlight2.jpg"
+          alt=""
+        />
         <h4>brand</h4>
         <h4>model</h4>
         <h4>year</h4>
@@ -78,109 +113,155 @@
       <h2>Add new comment</h2>
       <form action="" class="form">
         <textarea name="comment" placeholder="Comment......"></textarea>
-        <input type="submit" class="btn submit" value="Add Comment">
+        <input type="submit" class="btn submit" value="Add Comment" />
       </form>
     </div>
     <!-- Create -->
-<div class="create">
-  <form id="create"></form>
-  <div class="container">
-    <h1>Create Post</h1>
-    <label for="brand">Brand:</label>
-    <input type="text" id="brand" name="brand" placeholder="Enter car brand...">
+    <div class="create">
+      <form id="create"></form>
+      <div class="container">
+        <h1>Create Post</h1>
+        <label for="brand">Brand:</label>
+        <input
+          type="text"
+          id="brand"
+          name="brand"
+          placeholder="Enter car brand..."
+        />
 
-    <label for="model">Model:</label>
-    <input type="text" id="model" name="model" placeholder="Enter car model">
+        <label for="model">Model:</label>
+        <input
+          type="text"
+          id="model"
+          name="model"
+          placeholder="Enter car model"
+        />
 
-    <label for="year">Year:</label>
-    <input type="text" id="year" name="year" placeholder="Enter car year build">
+        <label for="year">Year:</label>
+        <input
+          type="text"
+          id="year"
+          name="year"
+          placeholder="Enter car year build"
+        />
 
-    <label for="month">Month:</label>
-    <input type="text" id="month" name="month" placeholder="Enter car month build">
+        <label for="month">Month:</label>
+        <input
+          type="text"
+          id="month"
+          name="month"
+          placeholder="Enter car month build"
+        />
 
-    <label for="body">Body:</label>
-    <input type="text" id="body" name="body" placeholder="Enter car body type">
+        <label for="body">Body:</label>
+        <input
+          type="text"
+          id="body"
+          name="body"
+          placeholder="Enter car body type"
+        />
 
-    <label for="fuel">Fuel:</label>
-    <input type="text" id="fuel" name="fuel" placeholder="Enter car fuel type">
-    
-    <label for="transmission">Transmission:</label>
-    <input type="text" id="transmission" name="transmission" placeholder="Enter car transmission">
-    
-    <label for="performance">Performance:</label>
-    <input type="text" id="performance" name="performance" placeholder="Enter car performance">
+        <label for="fuel">Fuel:</label>
+        <input
+          type="text"
+          id="fuel"
+          name="fuel"
+          placeholder="Enter car fuel type"
+        />
 
-    <label for="kilometers">Kilometers:</label>
-    <input type="text" id="kilometers" name="kilometers" placeholder="Enter car kilometers">
-    
-    <label for="price">Price:</label>
-    <input type="text" id="price" name="price" placeholder="Enter car price">
+        <label for="transmission">Transmission:</label>
+        <input
+          type="text"
+          id="transmission"
+          name="transmission"
+          placeholder="Enter car transmission"
+        />
 
-    <button class="create-button" type="button">Create</button>
+        <label for="performance">Performance:</label>
+        <input
+          type="text"
+          id="performance"
+          name="performance"
+          placeholder="Enter car performance"
+        />
 
-  </div>
-</div>
+        <label for="kilometers">Kilometers:</label>
+        <input
+          type="text"
+          id="kilometers"
+          name="kilometers"
+          placeholder="Enter car kilometers"
+        />
+
+        <label for="price">Price:</label>
+        <input
+          type="text"
+          id="price"
+          name="price"
+          placeholder="Enter car price"
+        />
+
+        <button class="create-button" type="button">Create</button>
+      </div>
+    </div>
     <!-- Edit -->
-<div class="edit">
-  <h1>Edit Post</h1>
+    <div class="edit">
+      <h1>Edit Post</h1>
 
-  <label for="brand">Brand:</label>
-  <input type="text" id="brand" name="brand" value="">
+      <label for="brand">Brand:</label>
+      <input type="text" id="brand" name="brand" value="" />
 
-  <label for="model">Model:</label>
-  <input type="text" id="model" name="model" value="">
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" value="" />
 
-  <label for="year">Year:</label>
-  <input type="text" id="year" name="year" value="">
+      <label for="year">Year:</label>
+      <input type="text" id="year" name="year" value="" />
 
-  <label for="month">Month:</label>
-  <input type="text" id="month" name="month" value="">
+      <label for="month">Month:</label>
+      <input type="text" id="month" name="month" value="" />
 
-  <label for="body">Body:</label>
-  <input type="text" id="body" name="body" value="">
+      <label for="body">Body:</label>
+      <input type="text" id="body" name="body" value="" />
 
-  <label for="fuel">Fuel:</label>
-  <input type="text" id="fuel" name="fuel" value="">
+      <label for="fuel">Fuel:</label>
+      <input type="text" id="fuel" name="fuel" value="" />
 
-  <label for="transmission">Transmission:</label>
-  <input type="text" id="transmission" name="transmission" value="">
+      <label for="transmission">Transmission:</label>
+      <input type="text" id="transmission" name="transmission" value="" />
 
-  <label for="performance">Performance:</label>
-  <input type="text" id="performance" name="performance" value="">
+      <label for="performance">Performance:</label>
+      <input type="text" id="performance" name="performance" value="" />
 
-  <label for="kilometers">Kilometers:</label>
-  <input type="text" id="kilometers" name="kilometers" value="">
+      <label for="kilometers">Kilometers:</label>
+      <input type="text" id="kilometers" name="kilometers" value="" />
 
-  <label for="price">Price:</label>
-  <input type="text" id="price" name="price" value="">
-  
-</div>
+      <label for="price">Price:</label>
+      <input type="text" id="price" name="price" value="" />
+    </div>
     <!-- Details -->
-<div class="details">
-  <h1>Post Details</h1>
-  <div class="info-section">
-    <div class="car-header">
-      <h1>Brand</h1>
-      <h3>Model</h3>
-      <h3>Year</h3>
-      <h3>Month</h3>
-      <h3>Body</h3>
-      <h3>Fuel</h3>
-      <h3>Transmission</h3>
-      <h3>Performance</h3>
-      <h3>Kilometers</h3>
-      <h3>Price</h3>
-      <h3>Owner</h3>
-      <p class="text">
-        best car that you can buy on this price
-    </p>
+    <div class="details">
+      <h1>Post Details</h1>
+      <div class="info-section">
+        <div class="car-header">
+          <h1>Brand</h1>
+          <h3>Model</h3>
+          <h3>Year</h3>
+          <h3>Month</h3>
+          <h3>Body</h3>
+          <h3>Fuel</h3>
+          <h3>Transmission</h3>
+          <h3>Performance</h3>
+          <h3>Kilometers</h3>
+          <h3>Price</h3>
+          <h3>Owner</h3>
+          <p class="text">best car that you can buy on this price</p>
+        </div>
+        <!-- Edit/Delete buttons ( Only for creator of this post )-->
+        <div class="buttons">
+          <a href="#" class="button">Edit</a>
+          <a href="#" class="button">Delete</a>
+        </div>
+      </div>
     </div>
-    <!-- Edit/Delete buttons ( Only for creator of this post )-->
-    <div class="buttons">
-      <a href="#" class="button">Edit</a>
-      <a href="#" class="button">Delete</a>
-    </div>
-  </div>
-  </div>
   </body>
 </html>
