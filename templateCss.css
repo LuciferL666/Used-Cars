@@ -1,25 +1,75 @@
-/* Стайлинг на целия header */
-header {
-    background-color: #333; /* Цвят на фона */
-    padding: 1em; /* Подравняване на съдържанието вътре в header */
-  }
-  
-  /* Стайлинг на навигационното меню */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.site-navigation {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.site-navigation ul li {
+  margin-right: 10px;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.site-navigation a:hover {
+  color: #8b0000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.login,
+.register,
+.catalog,
+.no-cars,
+.comments,
+.create,
+.edit,
+.details {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.usedCars {
+  margin-left: 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
   .site-navigation {
-    list-style: none; /* Премахва маркирането на списъка */
-    margin: 0; /* Премахва външния отстъп на списъка */
-    padding: 0; /* Премахва вътрешния отстъп на списъка */
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  /* Стайлинг на всяка отделна връзка в навигационното меню */
-  .site-navigation a {
-    text-decoration: none; /* Премахва подчертаването на връзките */
-    color: #fff; /* Цвят на текста */
-    padding: 0.5em 1em; /* Подравняване на текста вътре във връзката */
-    display: inline-block; /* Позволява на връзките да бъдат наредени хоризонтално */
+
+  .site-navigation ul {
+    margin-top: 10px;
   }
-  
-  /* Стайлинг при ховър (преместване на мишката върху връзката) */
-  .site-navigation a:hover {
-    background-color: #555; /* Промяна на цвета на фона при ховър */
+
+  .usedCars {
+    margin-left: 0;
+    margin-top: 10px;
   }
+}
