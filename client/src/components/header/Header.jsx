@@ -1,6 +1,5 @@
 export default function Header() {
     return(
-
         <header>
       <nav className="site-navigation">
         <ul>
