@@ -7,7 +7,7 @@ export default function Header() {
             <a class="usedCars" href="/home">Used Cars</a>
           </li>
           <li>
-            <a href="/catalog">catalog</a>
+            <a href="/catalog">Catalog</a>
           </li>
           <li>
             <a href="/register">Register</a>
