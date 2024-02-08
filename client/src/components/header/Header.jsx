@@ -16,7 +16,6 @@ export default function Header() {
             <a href="/login">login</a>
           </li>
           <li>
-            <a href="/logout">Logout</a>
           </li>
         </ul>
       </nav>
