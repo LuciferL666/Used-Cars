@@ -6,6 +6,7 @@ export default function Header() {
           <li>
             <a class="usedCars" href="/home">Used Cars</a>
           </li>
+          <div className="left-navigation">
           <li>
             <a href="/catalog">Catalog</a>
           </li>
@@ -18,6 +19,7 @@ export default function Header() {
           <li>
             <a href="/logout">Logout</a>
           </li>
+          </div>
         </ul>
       </nav>
     </header>
