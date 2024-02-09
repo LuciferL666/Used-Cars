@@ -8,7 +8,7 @@
     text-align: left; /* Алтернативно, може да използвате justify-content: flex-end; ако навигацията е flex контейнер */
     background-color: #f4f4f4; /* Фонов цвят на навигационното меню */
     padding: 30px 10px; /* Добавяме отстъпи за по-голям визуален ефект */
-    align-items: center;
+
   }
   
   .site-navigation ul {
