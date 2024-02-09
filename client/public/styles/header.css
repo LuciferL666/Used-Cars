@@ -1,0 +1,44 @@
+/* Стилове за навигацията на сайта */
+.left-navigation {
+    text-align: right; /* Алтернативно, може да използвате justify-content: flex-end; ако навигацията е flex контейнер */
+    background-color: #f4f4f4; /* Фонов цвят на навигационното меню */
+    padding: 0px 0; /* Добавяме отстъпи за по-голям визуален ефект */
+  }
+  .site-navigation {
+    text-align: left; /* Алтернативно, може да използвате justify-content: flex-end; ако навигацията е flex контейнер */
+    background-color: #f4f4f4; /* Фонов цвят на навигационното меню */
+    padding: 30px 10px; /* Добавяме отстъпи за по-голям визуален ефект */
+    align-items: center;
+  }
+  
+  .site-navigation ul {
+    list-style-type: none; /* Премахва маркирането на списъка */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-navigation ul li {
+    display: inline-block; /* Показва елементите един до друг */
+    margin-left: 10px; /* Разстояние между елементите */
+  }
+  
+  .site-navigation ul li:first-child {
+    margin-left: 0; /* Не добавяме разстояние преди първия елемент */
+  }
+  
+  .site-navigation ul li a {
+    text-decoration: none; /* Премахва подчертаването на връзките */
+    padding: 10px 15px; /* Добавяме отстъпи за по-лесно натискане на връзките */
+    color: #333; /* Цвят на текста по подразбиране */
+    font-family: Arial, sans-serif; /* Избор на шрифт */
+  }
+  
+  .site-navigation ul li a.usedCars {
+    font-size: 18px; /* По-голям шрифт за "Used Cars" */
+  }
+  
+  .site-navigation ul li a:hover {
+    font-weight: bold; /* Одебелява текста при ховър */
+    color: #555; /* Промяна на цвета на текста при ховър */
+  }
+  
