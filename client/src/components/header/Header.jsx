@@ -2,7 +2,6 @@ export default function Header() {
     return(
         <header>
       <nav className="site-navigation">
-
         <ul>
           <li>
             <a class="usedCars" href="/home">Used Cars</a>
@@ -20,7 +19,6 @@ export default function Header() {
             <a href="/logout">Logout</a>
           </li>
         </ul>
-        
       </nav>
     </header>
     )
