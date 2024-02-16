@@ -5,18 +5,18 @@ export default function Login() {
         <form action="">
           <input
             type="email"
-            class="email-login"
+            className="email-login"
             name="Email"
             placeholder="Your Email"
           />
           <input
             type="password"
-            class="password"
+            className="password"
             name="Password"
             placeholder="Your Password"
           />
-          <button class="submit-button" type="submit">Submit</button>
-          <button class="goToRegistration" type="button">
+          <button className="submit-button" type="submit">Submit</button>
+          <button className="goToRegistration" type="button">
             Don't have an account? Click here
           </button>
         </form>
