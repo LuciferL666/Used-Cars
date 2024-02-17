@@ -23,7 +23,7 @@ export default function Register() {
           />
           <input
             type="password"
-            class="repeatPassword"
+            className="repeatPassword"
             name="repeatPassword"
             placeholder="Repeat Password"
           />
