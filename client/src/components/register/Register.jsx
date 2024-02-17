@@ -27,6 +27,8 @@ export default function Register() {
             name="repeatPassword"
             placeholder="Repeat Password"
           />
+          <button className="submit-button" type="submit">Submit</button>
+          <button className="goToLogin" type="button">
             You have an account? Click here
           </button>
         </form>
