@@ -5,7 +5,7 @@ export default function Register() {
         <form action="">
           <input
             type="username"
-            class="username-register"
+            className="username-register"
             name="Username"
             placeholder="Your Username"
           />
