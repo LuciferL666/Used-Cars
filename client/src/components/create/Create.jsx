@@ -84,6 +84,7 @@ export default function Create() {
             placeholder="Enter car price"
           />
   
+          <button className="create-button" type="button">Create</button>
         </div>
       </div>
     )
