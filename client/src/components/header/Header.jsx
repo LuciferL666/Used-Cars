@@ -16,7 +16,7 @@ export default function Header() {
             <a href="/Register">Register</a>
           </li>
           <li>
-            <a href="/login">Login</a>
+            <a href="/Login">Login</a>
           </li>
           <li>
             <a href="/logout">Logout</a>
