@@ -4,6 +4,7 @@ import Catalog from "./components/catalog/Catalog";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import Create from "./components/create/Create";
+import Home from "./components/home/Home";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header />
 
       <Routes>
+        <Route path='/home' element={<Home />} />
         <Route path='/catalog' element={<Catalog />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
