@@ -90,8 +90,9 @@ export default function Create() {
             name="price"
             placeholder="Enter car price"
           />
-  
-          <button className="create-button" type="button">Create</button>
+          <label htmlFor="summary">Summary:</label>
+          <textarea name="summary" id="summary"></textarea>
+          <input className="btn submit" type="submit" value="Create Post" />
         </div>
         </form>
       </div>
