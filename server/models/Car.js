@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 
 const carSchema = new mongoose.Schema({
+  img: {
+    type: String,
+    required: true,
+  },
   brand: {
     type: String,
     required: true,
@@ -38,7 +42,7 @@ const carSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  img: {
+  summary: {
     type: String,
     required: true,
   },
