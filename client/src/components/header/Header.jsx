@@ -4,7 +4,7 @@ export default function Header() {
       <nav className="site-navigation">
         <ul>
           <li>
-            <a class="usedCars" href="/home">Used Cars</a>
+            <a class="usedCars" href="/">Used Cars</a>
           </li>
           <li>
             <a href="/create">Create</a>
