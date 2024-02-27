@@ -1,7 +1,7 @@
 export default function Create() {
     return (
         <div class="create">
-        <form id="create"></form>
+        <form id="create">
         <div class="container">
           <h1>Create Post</h1>
           <label htmlFor="brand">Brand:</label>
@@ -86,6 +86,7 @@ export default function Create() {
   
           <button className="create-button" type="button">Create</button>
         </div>
+        </form>
       </div>
     )
 }
