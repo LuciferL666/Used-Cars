@@ -1,10 +1,16 @@
+import { create } from '../../services/carService'
+
+
 export default function Create() {
-    const createCarSubmitHandler = (e) => {
+    const createCarSubmitHandler = async (e) => {
       e.preventDefault();
 
       const carData = Object.fromEntries(new FormData(e.currentTarget));
 
       console.log(carData);
+
+      const result = await create(carData);
+      console.log(result);
     }
 
     return (
@@ -16,7 +22,7 @@ export default function Create() {
           <input
             type="text"
             id="imageUrl"
-            name="imageUrl"
+            name="img"
             placeholder="Upload a photo..."
           />
           <label htmlFor="brand">Brand:</label>
