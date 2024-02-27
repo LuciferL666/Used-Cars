@@ -1,7 +1,15 @@
 export default function Create() {
+    const createCarSubmitHandler = (e) => {
+      e.preventDefault();
+
+      const carData = Object.fromEntries(new FormData(e.currentTarget));
+
+      console.log(carData);
+    }
+
     return (
         <div class="create">
-        <form id="create">
+        <form id="create" onSubmit={createCarSubmitHandler}>
         <div class="container">
           <h1>Create Post</h1>
           <label htmlFor="img">Image:</label>
