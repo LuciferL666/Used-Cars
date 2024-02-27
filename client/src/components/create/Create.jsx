@@ -4,6 +4,13 @@ export default function Create() {
         <form id="create">
         <div class="container">
           <h1>Create Post</h1>
+          <label htmlFor="img">Image:</label>
+          <input
+            type="text"
+            id="imageUrl"
+            name="imageUrl"
+            placeholder="Upload a photo..."
+          />
           <label htmlFor="brand">Brand:</label>
           <input
             type="text"
