@@ -1,6 +1,5 @@
 import { create } from '../../services/carService'
 
-
 export default function Create() {
     const createCarSubmitHandler = async (e) => {
       e.preventDefault();
