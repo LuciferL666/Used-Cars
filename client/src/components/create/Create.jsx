@@ -1,4 +1,4 @@
-import { create } from '../../services/carService'
+import * as carService from '../../services/carService'
 
 export default function Create() {
     const createCarSubmitHandler = async (e) => {
