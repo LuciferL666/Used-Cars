@@ -3,10 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import * as carService from '../../services/carService'
 
 export default function Create() {
+    const navigate = useNavigate();
+
     const createCarSubmitHandler = async (e) => {
       e.preventDefault();
 
       const carData = Object.fromEntries(new FormData(e.currentTarget));
+        await carService.create(carData);
+  
+        navigate('/catalog')
     }
 
     return (
