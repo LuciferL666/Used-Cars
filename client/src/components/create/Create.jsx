@@ -7,11 +7,6 @@ export default function Create() {
       e.preventDefault();
 
       const carData = Object.fromEntries(new FormData(e.currentTarget));
-
-      console.log(carData);
-
-      const result = await create(carData);
-      console.log(result);
     }
 
     return (
