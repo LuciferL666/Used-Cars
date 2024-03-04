@@ -9,9 +9,14 @@ export default function Create() {
       e.preventDefault();
 
       const carData = Object.fromEntries(new FormData(e.currentTarget));
+      try {
         await carService.create(carData);
   
         navigate('/catalog')
+      } catch (err) {
+        // Change to Error notification
+        console.log(err);
+      }
     }
 
     return (
